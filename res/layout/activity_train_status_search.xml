@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainStatusSearch">
+
+    <RelativeLayout
+        android:id="@+id/livestatusScreen"
+        android:layout_width="match_parent"
+        android:layout_height="523dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rouded3">
+
+        <AutoCompleteTextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/edittextcustom"
+            android:hint="Enter the train number "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="234dp"
+            android:layout_height="53dp"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginBottom="240dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="247dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginBottom="169dp"
+            android:background="@drawable/buttonround"
+            android:padding="10dp"
+            android:text="GET STATUS"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/station_code"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/edittextcustom"
+            android:hint="Enter the Station code"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

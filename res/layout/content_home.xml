@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    tools:showIn="@layout/app_bar_home">
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:id="@+id/homescreen">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:src="@mipmap/trainstatus"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="8dp"
+            android:padding="25dp"
+            android:text="LIVE TRAIN STATUS"
+            android:textAlignment="center"
+            android:textColor="#C2F4FA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rouded2"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:paddingTop="10dp"
+        android:id="@+id/liveStatus">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:src="@mipmap/trainstation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="8dp"
+            android:padding="25dp"
+            android:text="LIVE STATION STATUS"
+            android:textAlignment="center"
+            android:textColor="#C2F4FA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round3"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:paddingTop="10dp"
+        android:id="@+id/train_between_stations">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:src="@mipmap/trainbetstations" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="8dp"
+            android:padding="25dp"
+            android:text="TRAIN BETWEEN STATIONS"
+            android:textAlignment="center"
+            android:textColor="#C2F4FA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</GridLayout>
+</RelativeLayout>

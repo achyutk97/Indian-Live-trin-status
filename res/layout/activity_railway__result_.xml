@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Railway_Result_Activity">
+
+    <TextView
+        android:id="@+id/titless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text=" LIVE TRAIN STATUS "
+        android:textAlignment="center"
+        android:textColor="#030502"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:paddingTop="30dp"
+        android:id="@+id/resultId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titless"
+        android:layout_marginTop="0dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:textColor="#030502"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:text="Train Name" />
+
+            <TextView
+                android:id="@+id/tn1"
+                android:gravity="right"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textColor="#030502"
+                android:padding="3dip"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:textColor="#030502"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:text="Station" />
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/tn2"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textColor="#030502"
+                android:padding="3dip"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:textColor="#030502"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:text="Date" />
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/tn3"
+                android:textColor="#030502"
+                android:padding="3dip"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:textColor="#030502"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:text="Sch. Arrival" />
+
+            <TextView
+                android:id="@+id/tn4"
+                android:gravity="right"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textColor="#030502"
+                android:padding="3dip"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:textColor="#030502"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:text="Act. Arrival" />
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/tn5"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textColor="#030502"
+                android:padding="3dip"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:textColor="#030502"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:text="Sch. Departure" />
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/tn6"
+                android:textColor="#030502"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:padding="3dip"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textColor="#030502"
+                android:text="Act. Departure" />
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/tn7"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textColor="#030502"
+                android:padding="3dip"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:textColor="#030502"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:text="Delay Departure" />
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/tn8"
+                android:padding="3dip"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:textColor="#030502"
+                android:text="" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultId"
+        android:textColor="#030502" />
+
+
+</RelativeLayout>

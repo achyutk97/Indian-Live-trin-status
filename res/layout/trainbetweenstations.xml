@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Trainbetweenstations">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:background="@drawable/round3"
+        android:id="@+id/screen">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="0dp"
+            android:hint="Source Station Name"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:id="@+id/sourceName"
+            android:background="@drawable/edittextcustom" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/destName"
+            android:layout_below="@+id/sourceName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="134dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/edittextcustom"
+            android:hint="Destination Station Name"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/destName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="158dp"
+            android:layout_marginEnd="91dp"
+            android:background="@drawable/buttonround"
+            android:padding="10dp"
+            android:text="Find Trains"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:id="@+id/findtrain"
+            android:textSize="20sp" />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_swap"
+          android:layout_below="@+id/destName"
+          android:layout_above="@+id/findtrain"
+          />
+    </RelativeLayout>
+
+</LinearLayout>
